@@ -1,0 +1,166 @@
+# ============================================
+# ENVIRONMENT VARIABLES (CRITICAL - SECRETS!)
+# ============================================
+.env
+.env.local
+airflow/.env
+docker/.env
+docker/.env.local
+docker/.env.*.local
+
+# ============================================
+# PYTHON
+# ============================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+.venv
+
+# ============================================
+# DBT
+# ============================================
+dbt/target/
+dbt/logs/
+dbt_packages/
+dbt/myproject/target/
+dbt/myproject/logs/
+
+# ============================================
+# AIRFLOW
+# ============================================
+airflow-webserver.pid
+airflow/logs/
+airflow-scheduler.pid
+logs/
+*.log
+
+# ============================================
+# DOCKER
+# ============================================
+# Database files (generated, regenerated each run)
+postgres/data/
+.dockerignore
+
+# ============================================
+# IDE / EDITOR
+# ============================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+*.sublime-project
+*.sublime-workspace
+*.iml
+
+# ============================================
+# OPERATING SYSTEM
+# ============================================
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+ehthumbs.db
+$RECYCLE.BIN/
+*.cab
+
+# ============================================
+# TEMPORARY FILES
+# ============================================
+*.tmp
+*.temp
+.tmp/
+tmp/
+tempfile*
+
+# ============================================
+# CREDENTIALS & SECRETS
+# ============================================
+secrets/
+.credentials
+*.key
+*.pem
+*.pfx
+*.p12
+
+# ============================================
+# LARGE FILES & INSTALLERS
+# ============================================
+Miniconda3-latest-Linux-x86_64.sh
+*.tar.gz
+*.zip
+*.rar
+*.7z
+
+# ============================================
+# REDIS
+# ============================================
+redis/dump.rdb
+*.rdb
+
+# ============================================
+# CACHE
+# ============================================
+.cache/
+*.cache
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ============================================
+# NODE MODULES (if you add frontend later)
+# ============================================
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# ============================================
+# IDE SPECIFIC
+# ============================================
+.project
+.pydevproject
+.settings/
+*.classpath
+
+# ============================================
+# PYTEST & TESTING
+# ============================================
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.hypothesis/
+
+# ============================================
+# GIT
+# ============================================
+.git/
+.gitmodules
