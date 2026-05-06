@@ -88,6 +88,8 @@ services:
     environment:
       SUPERSET_LOG_LEVEL: "${SUPERSET_LOG_LEVEL:-info}"
       DATABASE_DB: "superset_db"
+      ENABLE_PROXY_FIX: "true"                                      # 👈 add this
+      SUPERSET_CONFIG_PATH: "/app/pythonpath/superset_config.py"
     networks:
       - my-network
 

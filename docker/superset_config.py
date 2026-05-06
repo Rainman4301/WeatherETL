@@ -29,6 +29,12 @@ from flask_caching.backends.filesystemcache import FileSystemCache
 
 logger = logging.getLogger()
 
+# ── Reverse Proxy / Cloudflare Tunnel ──────────────────
+ENABLE_PROXY_FIX = True
+PREFERRED_URL_SCHEME = "https"
+# ───────────────────────────────────────────────────────
+
+
 DATABASE_DIALECT = os.getenv("DATABASE_DIALECT")
 DATABASE_USER = os.getenv("DATABASE_USER")
 DATABASE_PASSWORD = os.getenv("DATABASE_PASSWORD")
